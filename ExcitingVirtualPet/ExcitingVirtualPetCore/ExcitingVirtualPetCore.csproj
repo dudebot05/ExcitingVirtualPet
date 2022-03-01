@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\basic_bird.jpg" />
+    <None Remove="Resources\basic_cat.jpg" />
+    <None Remove="Resources\basic_dog.jpg" />
+    <None Remove="Resources\bird_leaving.jpg" />
+    <None Remove="Resources\bird_sleeping.jpg" />
+    <None Remove="Resources\cat_leaving.bmp" />
+    <None Remove="Resources\cat_leaving.jpg" />
+    <None Remove="Resources\cat_sleeping.jpg" />
+    <None Remove="Resources\dog_leaving.jpg" />
+    <None Remove="Resources\dog_sleeping.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\basic_bird.jpg" />
+    <Resource Include="Resources\basic_cat.jpg" />
+    <Resource Include="Resources\basic_dog.jpg" />
+    <Resource Include="Resources\bird_leaving.jpg" />
+    <Resource Include="Resources\bird_sleeping.jpg" />
+    <Resource Include="Resources\cat_leaving.bmp" />
+    <Resource Include="Resources\cat_leaving.jpg" />
+    <Resource Include="Resources\cat_sleeping.jpg" />
+    <Resource Include="Resources\dog_leaving.jpg" />
+    <Resource Include="Resources\dog_sleeping.jpg" />
+  </ItemGroup>
+
+</Project>
